@@ -26,8 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 /**
- * This block simply outputs a list of links to recent blog entries, depending on
- * the context of the current page.
+ * This block simply outputs a list of links to recent blog entries.
  */
 class block_tb_blog extends block_base {
 
@@ -66,11 +65,11 @@ class block_tb_blog extends block_base {
     public function get_content() {
         global $CFG;
 
-        if ($this->content !== NULL) {
+        if ($this->content !== null) {
             return $this->content;
         }
 
-        // verify blog is enabled
+        // Verify blog is enabled.
         if (empty($CFG->enableblogs)) {
             $this->content = new stdClass();
             $this->content->text = '';
@@ -160,16 +159,16 @@ class block_tb_blog extends block_base {
             $filter['module'] = $context->instanceid;
             $a = new stdClass;
             $a->type = get_string('modulename', $this->page->cm->modname);
-            get_string('viewallmodentries', 'blog', $a);
+            $strview = get_string('viewallmodentries', 'blog', $a);
             $url->param('modid', $context->instanceid);
         } else if ($context->contextlevel == CONTEXT_COURSE) {
             $filter['course'] = $context->instanceid;
             $a = new stdClass;
             $a->type = get_string('course');
-            get_string('viewblogentries', 'blog', $a);
+            $strview = get_string('viewblogentries', 'blog', $a);
             $url->param('courseid', $context->instanceid);
         } else {
-            get_string('viewsiteentries', 'blog');
+            $strview = get_string('viewsiteentries', 'blog');
         }
         $filter['since'] = $settingleeloolxp->interval_time_consider;
 

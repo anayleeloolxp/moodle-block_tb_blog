@@ -1,5 +1,5 @@
 # LeelooLXP Recent Blogs Block
-
+This block shows all the recent blogs, admin can set the number of blogs to show, and other settings .
 Installation Instructions
 =========================
 

@@ -15,28 +15,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Settings File
+ * Moodle Get settings from L
  *
  * @package    block_tb_blog
  * @copyright  2020 Leeloo LXP (https://leeloolxp.com)
  * @author     Leeloo LXP <info@leeloolxp.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-defined('MOODLE_INTERNAL') || die;
 
-if ($ADMIN->fulltree) {
+require('../../config.php');
 
-    require_once($CFG->dirroot . '/blocks/tb_blog/lib.php');
-
-    $setting = new admin_setting_configtext(
-        'block_tb_blog/license',
-        get_string('license', 'block_tb_blog'),
-        get_string('license', 'block_tb_blog'),
-        0
-    );
-    $setting->set_updatedcallback(updateconfblog());
-    $settings->add($setting);
-
-    $setting = new admin_setting_configblog('block_tb_blog/settingsjson', '', '', '', PARAM_RAW);
-    $settings->add($setting);
-}
+require_once($CFG->libdir . '/filelib.php');
+require_once($CFG->dirroot . '/blocks/tb_blog/locallib.php');
+updateconfblog();

@@ -93,6 +93,7 @@ class block_tb_blog extends block_base {
         $settingleeloolxp = $resposedata->data->block_settings;
 
         if (empty($settingleeloolxp->interval_time_consider)) {
+            $settingleeloolxp = new stdClass();
             $settingleeloolxp->interval_time_consider = 8400;
         }
 
@@ -188,7 +189,7 @@ class block_tb_blog extends block_base {
     public function has_config() {
         return true;
     }
-    
+
     /**
      * Get settings from Leeloo
      */

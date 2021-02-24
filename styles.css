@@ -22,7 +22,7 @@
 .block_tb_blog_home ul.list + a {
     float: right;
     font-size: 20px;
-    padding: .5rem 5rem;
+    padding: 0.5rem 5rem;
     color: #fff;
     background-color: #00bcbe;
     border-color: #00bcbe;
@@ -32,7 +32,7 @@
 @media only screen and (max-width: 991px) {
     .block_tb_blog_home ul.list + a {
         font-size: 15px;
-        padding: .5rem 3rem;
+        padding: 0.5rem 3rem;
     }
 }
 

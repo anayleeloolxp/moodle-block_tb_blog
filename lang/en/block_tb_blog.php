@@ -29,3 +29,5 @@ $string['blocktitle'] = 'Leeloo LXP Latest Entry';
 $string['norecentblogentries'] = 'No recent entries';
 $string['nolicense'] = 'Invalid Leeloo LXP License ID';
 $string['license'] = 'Leeloo LXP License ID';
+
+$string['privacy:metadata'] = 'The Leeloo LXP Recent blog entries (tb_blog) block only shows information about blogs and does not store data itself.';

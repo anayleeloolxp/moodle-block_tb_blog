@@ -27,6 +27,16 @@ defined('MOODLE_INTERNAL') || die();
 
 $capabilities = array(
 
+    'block/tb_blog:myaddinstance' => array(
+        'captype' => 'write',
+        'contextlevel' => CONTEXT_SYSTEM,
+        'archetypes' => array(
+            'user' => CAP_ALLOW,
+        ),
+
+        'clonepermissionsfrom' => 'moodle/my:manageblocks',
+    ),
+
     'block/tb_blog:addinstance' => array(
         'riskbitmask' => RISK_SPAM | RISK_XSS,
 

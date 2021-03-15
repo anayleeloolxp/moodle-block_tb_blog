@@ -30,7 +30,7 @@ defined('MOODLE_INTERNAL') || die();
 /**
  * Privacy Subsystem for block_tb_blog implementing null_provider.
  *
- * @copyright  2018 Zig Tan <zig@moodle.com>
+ * @copyright  2020 Leeloo LXP (https://leeloolxp.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class provider implements \core_privacy\local\metadata\null_provider {

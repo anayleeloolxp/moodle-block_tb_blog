@@ -52,6 +52,7 @@ function updateconfblog() {
     if ($infoleeloolxp->status != 'false') {
         $leeloolxpurl = $infoleeloolxp->data->install_url;
     } else {
+        set_config('settingsjson', base64_encode($output), 'block_tb_blog');
         return;
     }
     $url = $leeloolxpurl . '/admin/Theme_setup/get_recent_blog_entries';

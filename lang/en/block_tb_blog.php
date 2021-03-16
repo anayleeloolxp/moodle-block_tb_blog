@@ -25,7 +25,7 @@
 
 $string['pluginname'] = 'Leeloo LXP Recent blog entries';
 $string['displayname'] = 'Leeloo LXP Recent blog entries';
-$string['blocktitle'] = 'Leeloo LXP Latest Entry';
+$string['blocktitle'] = 'Leeloo LXP Recent blog';
 $string['norecentblogentries'] = 'No recent entries';
 $string['nolicense'] = 'Invalid Leeloo LXP License ID';
 $string['license'] = 'Leeloo LXP License ID';

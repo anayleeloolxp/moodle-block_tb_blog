@@ -31,3 +31,5 @@ $string['nolicense'] = 'Invalid Leeloo LXP License ID';
 $string['license'] = 'Leeloo LXP License ID';
 
 $string['privacy:metadata'] = 'The Leeloo LXP Recent blog entries (tb_blog) block only shows information about blogs and does not store data itself.';
+$string['tb_blog:addinstance'] = 'Add a new Leeloo LXP Recent blog entries block';
+$string['tb_blog:myaddinstance'] = 'Add a new Leeloo LXP Recent blog entries block to Dashboard';

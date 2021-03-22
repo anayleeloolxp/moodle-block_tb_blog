@@ -10,14 +10,14 @@
 }
 .block_tb_blog ul.list a.recent_blogmore {
     text-align: center;
-    display: block;
+    /* display: block; */
     margin: 10px 0;
 }
 .block_tb_blog ul.list li {
     margin: 0 0 15px;
 }
 .block_tb_blog {
-    padding-top: 32px;
+    /* padding-top: 32px; */
 }
 .block_tb_blog_home ul.list + a {
     float: right;

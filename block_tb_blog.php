@@ -45,7 +45,7 @@ class block_tb_blog extends block_base {
      * @return array
      */
     public function applicable_formats() {
-        return array('all' => true, 'my' => false, 'tag' => false);
+        return array('all' => true);
     }
 
     /**

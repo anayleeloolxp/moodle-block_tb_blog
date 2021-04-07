@@ -1,3 +1,6 @@
+.block_tb_blog img {
+    max-width: 100%;
+}
 .block_tb_blog ul.list a.recent_blogtitle {
     font-weight: 700;
     color: #737373;

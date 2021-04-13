@@ -198,12 +198,4 @@ class block_tb_blog extends block_base {
     public function has_config() {
         return true;
     }
-
-    /**
-     * Get settings from Leeloo
-     */
-    public function cron() {
-        require_once($CFG->dirroot . '/blocks/tb_blog/lib.php');
-        updateconfblog();
-    }
 }

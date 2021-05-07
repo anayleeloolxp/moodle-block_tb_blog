@@ -92,7 +92,11 @@ class block_tb_blog extends block_base {
         $resposedata = json_decode(base64_decode($settingsjson));
 
         if (!isset($resposedata->data->block_settings)) {
-            $this->title = get_string('blocktitle', 'block_tb_blog');
+            if ($this->page->user_is_editing()) {
+                $this->title = get_string('blocktitle', 'block_tb_blog');
+            } else {
+                $this->title = '';
+            }
             $this->content = new stdClass();
             $this->content->text = '';
             $this->content->footer = '';
@@ -111,7 +115,11 @@ class block_tb_blog extends block_base {
         }
 
         if (empty($settingleeloolxp->block_title)) {
-            $settingleeloolxp->block_title = get_string('blocktitle', 'block_tb_blog');
+            if ($this->page->user_is_editing()) {
+                $settingleeloolxp->block_title = get_string('blocktitle', 'block_tb_blog');
+            } else {
+                $settingleeloolxp->block_title = '';
+            }   
         }
         $this->title = $settingleeloolxp->block_title;
 

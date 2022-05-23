@@ -119,7 +119,7 @@ class block_tb_blog extends block_base {
                 $settingleeloolxp->block_title = get_string('blocktitle', 'block_tb_blog');
             } else {
                 $settingleeloolxp->block_title = '';
-            }   
+            }
         }
         $this->title = $settingleeloolxp->block_title;
 
@@ -177,13 +177,15 @@ class block_tb_blog extends block_base {
 
                 $entrylink .= html_writer::div(
                     substr_replace(
-                        strip_tags($entry->summary), "...", 200
+                        strip_tags($entry->summary),
+                        "...",
+                        200
                     ) .
-                    html_writer::link(
-                        $viewblogurl,
-                        'Read More',
-                        array('class' => 'recent_blogmore')
-                    ),
+                        html_writer::link(
+                            $viewblogurl,
+                            'Read More',
+                            array('class' => 'recent_blogmore')
+                        ),
                     'recent_blogdescription'
                 );
 

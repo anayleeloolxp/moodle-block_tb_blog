@@ -33,7 +33,7 @@ if ($ADMIN->fulltree) {
         get_string('license', 'block_tb_blog'),
         0
     );
-    //$setting->set_updatedcallback(block_tb_blog_updateconf());
+
     $settings->add($setting);
 
     $setting = new admin_setting_configblog('block_tb_blog/settingsjson', '', '', '', PARAM_RAW);

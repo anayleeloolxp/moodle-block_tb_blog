@@ -112,6 +112,11 @@ class block_tb_blog extends block_base {
             $settingleeloolxp->no_of_entires = 4;
         }
 
+        $summaryformatoptions = new stdClass();
+        $summaryformatoptions->noclean = false;
+        $summaryformatoptions->overflowdiv = false;
+        $summaryformatoptions->filter = true;
+
         if (empty($settingleeloolxp->block_title)) {
             if ($this->page->user_is_editing()) {
                 $settingleeloolxp->block_title = get_string('blocktitle', 'block_tb_blog');
@@ -119,7 +124,7 @@ class block_tb_blog extends block_base {
                 $settingleeloolxp->block_title = '';
             }
         }
-        $this->title = $settingleeloolxp->block_title;
+        $this->title = format_text($settingleeloolxp->block_title, 1, $summaryformatoptions);
 
         $this->content = new stdClass();
         $this->content->footer = '';
